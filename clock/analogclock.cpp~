@@ -105,7 +105,7 @@
      painter.setPen(Qt::NoPen);
      painter.setBrush(secColor);
      painter.save();
-     painter.rotate(6.0 * time.second());
+     painter.rotate(6.0 * (time.minute() + time.second()));
      painter.drawConvexPolygon(secHand, 7);
      painter.restore();
 
